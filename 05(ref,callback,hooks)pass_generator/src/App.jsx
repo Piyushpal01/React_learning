@@ -9,6 +9,7 @@ function App() {
   // useRef hook => used to give reference of other elements
   const passwordRef = useRef(null)
 
+  // useCallback => memorizes the function, keeps the values in memory for future usages.
   const passwordGenerator = useCallback(() => {
     let pass="";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
