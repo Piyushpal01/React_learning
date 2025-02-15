@@ -1,11 +1,17 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <h1 className='bg-black text-white'>React Router Dom</h1>
+      <Header />
+      {/* dynamically passing components using react-router-dom with help of outlet*/}
+      <Outlet />
+      <Footer />
     </>
   )
 }
