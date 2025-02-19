@@ -30,6 +30,7 @@ function App() {
     */
   }
 
+  // Local Storage Concept
   useEffect(() => {
     // getting item from local storage.
     const todos = JSON.parse(localStorage.getItem("todos"));
